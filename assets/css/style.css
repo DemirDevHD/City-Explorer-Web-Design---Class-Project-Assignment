@@ -1,0 +1,340 @@
+.navbar{
+background-color:#332c3e;
+}
+
+.navbar-nav .nav-link:hover{
+color:#f4c542;
+}
+
+.navbar-brand{
+font-family:Cambria,Cochin,Georgia,Times,'Times New Roman',serif;
+font-size:23px;
+letter-spacing:3px;
+}
+
+body{
+background-color:#fffee1;
+font-family:Cambria,Cochin,Georgia,Times,'Times New Roman',serif;
+}
+
+.card-img-top{
+height:260px;
+object-fit:cover;
+}
+
+.card{
+background-color:#fffcf0;
+}
+
+.form-card{
+background-color:rgba(255,254,238,0.85);
+backdrop-filter:blur(6px);
+border-left:5px solid #332c3e;
+}
+
+.contact-section{
+background-image:linear-gradient(rgba(51,44,62,0.45),rgba(51,44,62,0.45)),url("../../images/sivas-iletisim.jpg");
+background-size:cover;
+background-position:center;
+padding:80px 0;
+}
+
+.btn-dark:hover{
+background-color:#4b405a;
+color:#f4c542;
+transition:0.3s;
+}
+
+.form-control{
+background-color:#f4f1ea;
+border:1px solid #d6d0c4;
+transition:0.2s;
+}
+
+.form-control:focus{
+background-color:white;
+border-color:#5fa8a8;
+box-shadow:0 0 5px rgba(95,168,168,0.3);
+}
+
+h1,h2,h3,h4,h5,h6{
+font-family:Georgia,'Times New Roman',Times,serif;
+}
+
+.carousel-img{
+width:100%;
+height:60vh;
+object-fit:cover;
+}
+
+.carousel-caption{
+background-color:rgba(51,44,62,0.65);
+border-radius:10px;
+padding:15px;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:36px;
+}
+
+.navbar-brand{
+font-size:18px;
+letter-spacing:1px;
+}
+
+.navbar-brand img{
+width:32px;
+height:32px;
+}
+
+.card-img-top{
+height:200px;
+}
+
+.carousel-img{
+height:260px;
+object-fit:cover;
+}
+
+.form-card{
+padding:25px!important;
+}
+
+.contact-section{
+padding:40px 15px;
+}
+}
+
+.rehber-card{
+height:280px!important;
+overflow:hidden;
+border:2px solid #2bb3b3;
+transition:0.3s;
+display:flex!important;
+}
+
+.card h5{
+font-weight:800!important;
+font-size:22px;
+}
+
+.rehber-card .row.g-0{
+width:100%;
+height:100%;
+margin:0;
+}
+
+.rehber-card .col-md-6.p-4{
+display:flex!important;
+flex-direction:column!important;
+height:100%!important;
+justify-content:flex-start!important;
+}
+
+.rehber-card h5{
+font-weight:800!important;
+font-size:20px;
+margin-bottom:0;
+flex-shrink:0;
+}
+
+.rehber-card p.text-muted{
+flex-grow:1!important;
+margin-top:10px!important;
+margin-bottom:10px!important;
+font-size:0.9rem;
+overflow:hidden;
+}
+
+.rehber-card .detay-btn{
+margin-top:auto!important;
+background-color:#332c3e;
+color:white;
+border:none;
+padding:8px 20px;
+transition:0.3s;
+align-self:flex-start;
+}
+
+.rehber-card .detay-btn:hover{
+background-color:#4b405a;
+color:#f4c542;
+}
+
+.rehber-card .col-md-6:last-child{
+height:100%;
+}
+
+.rehber-card img{
+height:100%!important;
+width:100%!important;
+object-fit:cover;
+}
+
+.rehber-card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+@media(max-width:768px){
+
+.rehber-card{
+height:auto!important;
+flex-direction:column!important;
+}
+
+.rehber-card .col-md-6{
+width:100%!important;
+height:auto!important;
+}
+
+.rehber-card img{
+height:220px!important;
+object-fit:cover!important;
+display:block!important;
+}
+
+}
+
+/* ================= DARK THEME (inactive until body gets class="dark-theme") ================= */
+
+body.dark-theme{
+background-color:#1e1b26;
+color:#e6e2f0;
+}
+
+body.dark-theme .navbar{
+background-color:#181522;
+}
+
+body.dark-theme .navbar-nav .nav-link{
+color:#e6e2f0;
+}
+
+body.dark-theme .navbar-nav .nav-link:hover{
+color:#f4c542;
+}
+
+body.dark-theme .card{
+background-color:#262232;
+color:#e6e2f0;
+}
+
+body.dark-theme .form-card{
+background-color:rgba(38,34,50,0.9);
+border-left:5px solid #f4c542;
+}
+
+body.dark-theme .form-control{
+background-color:#2e2940;
+border:1px solid #4a4560;
+color:#ffffff;
+}
+
+body.dark-theme .form-control:focus{
+background-color:#352f4d;
+border-color:#f4c542;
+box-shadow:0 0 5px rgba(244,197,66,0.3);
+}
+
+body.dark-theme .contact-section{
+background-image:
+linear-gradient(rgba(20,18,30,0.7),rgba(20,18,30,0.7)),
+url("../../images/sivas-iletisim.jpg");
+}
+
+body.dark-theme .carousel-caption{
+background-color:rgba(20,18,30,0.75);
+}
+
+body.dark-theme .rehber-card{
+border:2px solid #f4c542;
+background-color:#262232;
+}
+
+body.dark-theme .rehber-card .detay-btn{
+background-color:#f4c542;
+color:#1e1b26;
+}
+
+body.dark-theme .rehber-card .detay-btn:hover{
+background-color:#d4a92f;
+color:white;
+}
+
+body.dark-theme .btn-dark{
+background-color:#2e2940;
+}
+
+body.dark-theme .btn-dark:hover{
+background-color:#f4c542;
+color:#1e1b26;
+}
+
+body.dark-theme .navbar-brand,
+body.dark-theme .nav-link{
+color:#e6e2f0!important;
+}
+
+body.dark-theme .navbar-brand:hover{
+color:#f4c542!important;
+}
+
+body.dark-theme .text-dark{
+color:#e6e2f0!important;
+}
+
+body.dark-theme .text-muted{
+color:#bfb8d6!important;
+}
+
+body.dark-theme .form-label{
+color:#e6e2f0!important;
+}
+body.dark-theme .form-control::placeholder{
+color:#bfb8d6!important;
+opacity:1;
+}
+
+body.dark-theme .form-control{
+color:#ffffff!important;
+}
+
+body.dark-theme textarea::placeholder{
+color:#bfb8d6!important;
+opacity:1;
+}
+
+body.dark-theme .bg-light,
+body.dark-theme .bg-white{
+background-color:#262232!important;
+color:#e6e2f0!important;
+}
+
+body.dark-theme .rounded{
+background-color:#262232!important;
+}
+
+body.dark-theme .modal-content{
+background-color:#262232!important;
+color:#e6e2f0!important;
+}
+
+body.dark-theme .modal-body{
+background-color:#262232!important;
+}
+
+body.dark-theme #modalTitle{
+color:#e6e2f0!important;
+border-color:#4a4560!important;
+}
+
+body.dark-theme #modalDescription{
+color:#bfb8d6!important;
+}
+
+body.dark-theme .btn-close{
+filter:invert(1);
+}

@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Şehir Rehberi | Sivas Kaşifi</title>
-    <link rel="icon" href="images/logo.png" type="image/png" >
+    <link rel="icon" href="images/logo2.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="d-flex flex-column min-vh-100 bg-light">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
-                <img src="images/logo.png" alt="Sivas Kaşifi Logo" width="40" height="40" class="d-inline-block align-top bg-white p-1 rounded me-2">
+                <img src="images/logo2.png" alt="Sivas Kaşifi Logo" width="40" height="40"
+                    class="d-inline-block align-top me-2">
                 <span>SİVAS KAŞİFİ</span>
             </a>
-            <button class="navbar-toggler" border-0 shadow-none type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -34,86 +38,159 @@
         <div class="row mb-5 text-center">
             <div class="col-12">
                 <h1 class="display-5 fw-bold text-dark">Şehri Keşfedin</h1>
-                <p class="lead text-muted">Sivas'ın tarih kokan sokaklarında mutlaka görmeniz gereken 6 özel durak.</p>
-                <div class="mx-auto bg-dark" style="height: 3px; width: 60px;"></div>
+                <p class="lead text-muted">Sivas'ın tarih kokan sokaklarında mutlaka görmeniz gereken özel duraklar.</p>
+                <div class="mx-auto" style="height: 3px; width: 60px; background-color: #2bb3b3;"></div>
             </div>
         </div>
-        
 
         <div class="row g-4">
+            
             <div class="col-lg-4 col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                    <img src="images/gok-medrese.jpg" class="card-img-top" alt="Gök Medrese">
-                    <div class="card-body text-center">
-                        <span class="badge bg-secondary mb-2">Tarihi Eser</span>
-                        <h5>Gök Medrese</h5>
-                        <p class="small text-muted">1271 yapımı, Selçuklu sanatının turkuaz çinili şaheseri.</p>
-                        <button class="btn btn-selcuklu btn-sm w-100">İncele</button>
+                <div class="card rehber-card shadow-sm h-100">
+                    <div class="row g-0 h-100">
+                        <div class="col-md-6 p-4 d-flex flex-column justify-content-between">
+                            <h5 class="border-bottom pb-2">Gök Medrese</h5>
+                            <p class="text-muted small">Selçuklu döneminin en önemli mimari eserlerinden biridir.</p>
+                            <button class="btn detay-btn mt-2" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#detailModal"
+                                    data-bs-title="Gök Medrese"
+                                    data-bs-desc="Gök Medrese, Sivas’ın en önemli Selçuklu eserlerinden biri olup 1271 yılında Anadolu Selçuklu Devleti veziri Sahip Ata Fahreddin Ali tarafından yaptırılmıştır. Yapının mimarı Konya’dan gelen Kaluyan el-Konevî’dir.
+Medrese, özellikle çift minareli taç kapısı ve turkuaz renkli çinileri ile dikkat çeker. Bu süslemeler yapıya adını veren “Gök” ifadesinin ortaya çıkmasına neden olmuştur. Taş işçiliği ve geometrik süslemeler Selçuklu sanatının en zarif örneklerinden biri olarak kabul edilmektedir.
+Tarih boyunca medrese eğitim kurumu olarak kullanılmış ve dönemin önemli bilim insanlarının yetişmesine katkı sağlamıştır. Günümüzde ise hem yerli hem yabancı ziyaretçiler için Sivas’ın simge yapılarından biri olarak önemli bir turistik merkezdir."
+                                    data-bs-img="images/gok-medrese.jpg">
+                                İncele
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/gok-medrese.jpg" class="img-fluid h-100 w-100" style="object-fit:cover;">
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                    <img src="images/divrigi.jpg" class="card-img-top" alt="Divriği">
-                    <div class="card-body text-center">
-                        <span class="badge bg-secondary mb-2">Tarihi Eser</span>
-                        <h5>Divriği Ulu Camii</h5>
-                        <p class="small text-muted">UNESCO Dünya Mirası listesindeki taş işçiliği zirvesi.</p>
-                        <button class="btn btn-selcuklu btn-sm w-100">İncele</button>
+                <div class="card rehber-card shadow-sm h-100">
+                    <div class="row g-0 h-100">
+                        <div class="col-md-6 p-4 d-flex flex-column justify-content-between">
+                            <h5 class="border-bottom pb-2">Divriği Ulu Camii</h5>
+                            <p class="text-muted small">UNESCO Dünya Mirası Listesi’nde yer alan eşsiz bir tarihi yapıdır.</p>
+                            <button class="btn detay-btn mt-2" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#detailModal"
+                                    data-bs-title="Divriği Ulu Camii"
+                                    data-bs-desc="Divriği Ulu Camii ve Darüşşifası, 1228 yılında Mengücekli Beyliği döneminde Ahmet Şah ve Turan Melek tarafından yaptırılmıştır. Yapı, mimari özgünlüğü ve taş işçiliğinin eşsizliği nedeniyle 1985 yılında UNESCO Dünya Mirası Listesi’ne alınmıştır.
+Cami ve darüşşifa bölümlerinden oluşan kompleks, özellikle taç kapılarındaki detaylı taş oymaları ile dünyaca ünlüdür. Her bir kapı farklı motif ve anlamlar taşımaktadır ve bu yönüyle Anadolu’daki en özgün mimari örneklerden biri olarak kabul edilir.
+Yapı yalnızca ibadet alanı olarak değil aynı zamanda bir sağlık merkezi olarak da hizmet vermiştir. Günümüzde hem mimari hem kültürel değeri sayesinde Türkiye’nin en önemli tarihi eserleri arasında gösterilmektedir."
+                                    data-bs-img="images/divrigi.jpg">
+                                İncele
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/divrigi.jpg" class="img-fluid h-100 w-100" style="object-fit:cover;">
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                    <img src="images/sifaiye.jpg" class="card-img-top" alt="Şifaiye">
-                    <div class="card-body text-center">
-                        <span class="badge bg-secondary mb-2">Tarihi Eser</span>
-                        <h5>Şifaiye Medresesi</h5>
-                        <p class="small text-muted">Anadolu'nun en büyük tarihi hastanelerinden Selçuklu şifahanesi.</p>
-                        <button class="btn btn-selcuklu btn-sm w-100">İncele</button>
+                <div class="card rehber-card shadow-sm h-100">
+                    <div class="row g-0 h-100">
+                        <div class="col-md-6 p-4 d-flex flex-column justify-content-between">
+                            <h5 class="border-bottom pb-2">Şifaiye Medresesi</h5>
+                            <p class="text-muted small">Selçuklu döneminden kalan önemli bir şifahane yapısıdır.</p>
+                            <button class="btn detay-btn mt-2" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#detailModal"
+                                    data-bs-title="Şifaiye Medresesi"
+                                    data-bs-desc="Şifaiye Medresesi, 1217 yılında Anadolu Selçuklu Sultanı I. İzzeddin Keykavus tarafından yaptırılmıştır. Yapı, Selçuklu döneminin en büyük darüşşifalarından biri olarak hem eğitim hem de tedavi merkezi olarak kullanılmıştır.
+Medrese içerisinde hastaların tedavi edildiği odalar, eğitim verilen alanlar ve avlu etrafında yer alan çeşitli bölümler bulunmaktadır. Aynı zamanda Sultan I. İzzeddin Keykavus’un türbesi de bu kompleks içerisinde yer almaktadır.
+Şifaiye Medresesi, Selçuklu döneminde tıp alanındaki gelişmişliği göstermesi açısından büyük önem taşımaktadır. Günümüzde ise Sivas’ın tarihî kimliğini yansıtan önemli kültürel miraslardan biri olarak ziyaretçilere açıktır."
+                                    data-bs-img="images/sifaiye.jpg">
+                                İncele
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/sifaiye.jpg" class="img-fluid h-100 w-100" style="object-fit:cover;">
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                    <img src="images/kongre-muzesi.jpg" class="card-img-top" alt="Kongre Müzesi">
-                    <div class="card-body text-center">
-                        <span class="badge bg-info text-dark mb-2">Müze</span>
-                        <h5>Kongre Müzesi</h5>
-                        <p class="small text-muted">Cumhuriyetin temellerinin atıldığı tarihi karargah.</p>
-                        <button class="btn btn-selcuklu btn-sm w-100">İncele</button>
+                <div class="card rehber-card shadow-sm h-100">
+                    <div class="row g-0 h-100">
+                        <div class="col-md-6 p-4 d-flex flex-column justify-content-between">
+                            <h5 class="border-bottom pb-2">Kongre Müzesi</h5>
+                            <p class="text-muted small">Sivas Kongresi’nin yapıldığı tarihi bir binadır.</p>
+                            <button class="btn detay-btn mt-2" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#detailModal"
+                                    data-bs-title="Kongre Müzesi"
+                                   data-bs-desc="Sivas Kongre Müzesi, Türkiye Cumhuriyeti’nin kuruluş sürecinde önemli kararların alındığı Sivas Kongresi’ne ev sahipliği yapmasıyla tarihî açıdan büyük önem taşımaktadır. 4–11 Eylül 1919 tarihleri arasında gerçekleştirilen kongre, Milli Mücadele’nin dönüm noktalarından biri olarak kabul edilmektedir.
+Mustafa Kemal Atatürk ve arkadaşlarının katılımıyla gerçekleştirilen kongrede ulusal bağımsızlık hedefi doğrultusunda önemli kararlar alınmış ve Anadolu’daki direniş hareketleri tek bir çatı altında toplanmıştır.
+Günümüzde müze olarak hizmet veren yapı içerisinde kongre dönemine ait belgeler, fotoğraflar ve çeşitli tarihî eserler sergilenmektedir. Bu yönüyle müze, ziyaretçilere Cumhuriyet tarihinin önemli bir dönemini yakından tanıma fırsatı sunmaktadır."
+                                    data-bs-img="images/kongre-muzesi.jpg">
+                                İncele
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/kongre-muzesi.jpg" class="img-fluid h-100 w-100" style="object-fit:cover;">
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                    <img src="images/arkeoloji-muzesi.jpg" class="card-img-top" alt="Arkeoloji Müzesi">
-                    <div class="card-body text-center">
-                        <span class="badge bg-info text-dark mb-2">Müze</span>
-                        <h5>Arkeoloji Müzesi</h5>
-                        <p class="small text-muted">Bölgenin binlerce yıllık tarihine ışık tutan eserler.</p>
-                        <button class="btn btn-selcuklu btn-sm w-100">İncele</button>
+                <div class="card rehber-card shadow-sm h-100">
+                    <div class="row g-0 h-100">
+                        <div class="col-md-6 p-4 d-flex flex-column justify-content-between">
+                            <h5 class="border-bottom pb-2">Arkeoloji Müzesi</h5>
+                            <p class="text-muted small">Sivas’ın zengin tarihini yansıtan önemli bir müzedir.</p>
+                            <button class="btn detay-btn mt-2" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#detailModal"
+                                    data-bs-title="Arkeoloji Müzesi"
+                                   data-bs-desc="Sivas Arkeoloji Müzesi, bölgenin binlerce yıllık tarihini yansıtan zengin koleksiyonlara ev sahipliği yapmaktadır. Müze içerisinde Roma, Bizans, Selçuklu ve Osmanlı dönemlerine ait çok sayıda eser sergilenmektedir.
+Kazı çalışmaları sonucunda elde edilen taş eserler, seramikler, süs eşyaları ve mezar buluntuları bölgenin tarih boyunca farklı medeniyetlere ev sahipliği yaptığını göstermektedir. Müze, tarih meraklıları için önemli bir araştırma ve keşif alanı niteliğindedir.
+Ziyaretçiler müze içerisinde Anadolu’nun kültürel gelişimini kronolojik olarak inceleme fırsatı bulurken aynı zamanda Sivas’ın tarihî geçmişini daha yakından tanıyabilmektedir."
+                                    data-bs-img="images/arkeoloji-muzesi.jpg">
+                                İncele
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/arkeoloji-muzesi.jpg" class="img-fluid h-100 w-100" style="object-fit:cover;">
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                    <img src="images/asik-veysel.jpg" class="card-img-top" alt="Aşık Veysel">
-                    <div class="card-body text-center">
-                        <span class="badge bg-info text-dark mb-2">Müze</span>
-                        <h5>Aşık Veysel Müzesi</h5>
-                        <p class="small text-muted">Büyük halk ozanımızın hatıralarının yaşatıldığı evi.</p>
-                        <button class="btn btn-selcuklu btn-sm w-100">İncele</button>
+                <div class="card rehber-card shadow-sm h-100">
+                    <div class="row g-0 h-100">
+                        <div class="col-md-6 p-4 d-flex flex-column justify-content-between">
+                            <h5 class="border-bottom pb-2">Aşık Veysel Müzesi</h5>
+                            <p class="text-muted small">Ünlü halk ozanı Aşık Veysel’i tanıtan bir müzedir.</p>
+                            <button class="btn detay-btn mt-2" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#detailModal"
+                                    data-bs-title="Aşık Veysel Müzesi"
+                                    data-bs-desc="Aşık Veysel Müzesi, Türk halk edebiyatının en önemli ozanlarından biri olan Aşık Veysel’in yaşamını ve sanatını tanıtmak amacıyla oluşturulmuştur. Müze, Sivas’ın Şarkışla ilçesine bağlı Sivrialan köyünde yer almaktadır.
+Aşık Veysel’in yaşadığı evin müzeye dönüştürülmesiyle oluşturulan bu yapı içerisinde ozana ait kişisel eşyalar, bağlaması, fotoğrafları ve eserlerine ait belgeler sergilenmektedir.
+Türk halk kültürünün önemli temsilcilerinden biri olan Aşık Veysel’in yaşam felsefesi, eserleri ve Anadolu insanına bıraktığı kültürel miras ziyaretçilere etkileyici bir şekilde sunulmaktadır."
+                                    data-bs-img="images/asik-veysel.jpg">
+                                İncele
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/asik-veysel.jpg" class="img-fluid h-100 w-100" style="object-fit:cover;">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
+
+        </div> 
+    </main> 
 
     <footer class="mt-auto py-4 bg-dark text-white text-center">
         <div class="container">
@@ -121,8 +198,56 @@
         </div>
     </footer>
 
+    <div class="modal fade" id="detailModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg overflow-hidden">
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        
+                        <div class="col-lg-7 p-4 p-md-5 d-flex flex-column" style="min-height: 450px;">
+                            <div class="d-flex justify-content-between align-items-start mb-4">
+                                <h2 class="fw-bold text-dark mb-0 border-bottom pb-2" id="modalTitle">Başlık</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            
+                            <div class="modal-text-content overflow-auto pe-3" style="max-height: 350px;">
+                                <!-- Javascript tarafında innerHTML kullanarak /n metinlerini ayırmak için style ekledik -->
+                                <p class="lead text-secondary" id="modalDescription" style="line-height: 1.8; white-space: pre-wrap;">Detaylı Açıklama...</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-5 d-none d-lg-block">
+                            <div class="h-100">
+                                <img src="" id="modalImage" class="img-fluid h-100 w-100" style="object-fit: cover; min-height: 100%;" alt="Place Image">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const detailModal = document.getElementById('detailModal');
+        if (detailModal) {
+            detailModal.addEventListener('show.bs.modal', event => {
+                const button = event.relatedTarget;
+                const title = button.getAttribute('data-bs-title');
+                const desc = button.getAttribute('data-bs-desc');
+                const img = button.getAttribute('data-bs-img');
+
+                detailModal.querySelector('#modalTitle').textContent = title;
+                // pre-wrap stili sayesinde metindeki boşluklar satır başı olarak algılanacak
+                detailModal.querySelector('#modalDescription').textContent = desc; 
+                detailModal.querySelector('#modalImage').src = img;
+            });
+        }
+    });
+    </script>
 </body>
 </html>
