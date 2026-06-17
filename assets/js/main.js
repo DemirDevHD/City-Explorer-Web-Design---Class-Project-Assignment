@@ -1,12 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    
-    
-    
     const welcomeModalEl = document.getElementById('welcomeModal');
     if (welcomeModalEl) {
-        
-        
         const navEntries = performance.getEntriesByType("navigation");
         const isReload = navEntries.length > 0 && navEntries[0].type === "reload";
         const hasShown = sessionStorage.getItem('welcomeShown');
@@ -40,9 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
             sessionStorage.setItem('welcomeShown', 'true');
         }
     }
-
-    
-    
     
     const themeToggleBtn = document.getElementById('themeToggleBtn');
     
@@ -70,11 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
             themeToggleBtn.textContent = isDark ? '☀️' : '🌙';
         });
     }
-
-    
-    
-    
-    
     
     function showAlertModal(title, message) {
         const modalEl = document.getElementById('alertModal');
