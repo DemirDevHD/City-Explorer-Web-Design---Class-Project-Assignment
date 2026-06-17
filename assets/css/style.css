@@ -185,7 +185,8 @@ height:auto!important;
 flex-direction:column!important;
 }
 
-.rehber-card .col-md-6{
+.rehber-card .col-md-6,
+.rehber-card .col-md-6.p-4{
 width:100%!important;
 height:auto!important;
 }
@@ -198,7 +199,7 @@ display:block!important;
 
 }
 
-/* ================= DARK THEME (inactive until body gets class="dark-theme") ================= */
+
 
 body.dark-theme{
 background-color:#1e1b26;
@@ -278,7 +279,8 @@ body.dark-theme .nav-link{
 color:#e6e2f0!important;
 }
 
-body.dark-theme .navbar-brand:hover{
+body.dark-theme .navbar-brand:hover,
+body.dark-theme .nav-link:hover{
 color:#f4c542!important;
 }
 

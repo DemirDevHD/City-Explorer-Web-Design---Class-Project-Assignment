@@ -14,7 +14,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center fw-bold" href="./index.html">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
                 <img src="images/logo2.png" alt="Sivas Kaşifi Logo" width="40" height="40"
                     class="d-inline-block align-top me-2">
                 <span>SİVAS KAŞİFİ</span>
@@ -24,10 +24,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fw-bold">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Anasayfa</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="./rehber.html">Rehber</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./iletisim.html">İletişim</a></li>
+                <ul class="navbar-nav ms-auto fw-bold align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="rehber.html">Rehber</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button id="themeToggleBtn" class="btn btn-sm btn-outline-light rounded-circle" title="Gece/Gündüz Modu" style="width: 36px; height: 36px; display:flex; align-items:center; justify-content:center; font-size:16px;">🌙</button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -47,7 +50,7 @@
             
             <div class="col-lg-4 col-md-6">
                 <div class="card rehber-card shadow-sm h-100">
-                    <div class="row g-0 h-100">
+                    <div class="row g-0 h-100 flex-column-reverse flex-md-row">
                         <div class="col-md-6 p-4 d-flex flex-column justify-content-between">
                             <h5 class="border-bottom pb-2">Gök Medrese</h5>
                             <p class="text-muted small">Selçuklu döneminin en önemli mimari eserlerinden biridir.</p>
@@ -71,7 +74,7 @@ Tarih boyunca medrese eğitim kurumu olarak kullanılmış ve dönemin önemli b
 
             <div class="col-lg-4 col-md-6">
                 <div class="card rehber-card shadow-sm h-100">
-                    <div class="row g-0 h-100">
+                    <div class="row g-0 h-100 flex-column-reverse flex-md-row">
                         <div class="col-md-6 p-4 d-flex flex-column justify-content-between">
                             <h5 class="border-bottom pb-2">Divriği Ulu Camii</h5>
                             <p class="text-muted small">UNESCO Dünya Mirası Listesi’nde yer alan eşsiz bir tarihi yapıdır.</p>
@@ -95,7 +98,7 @@ Yapı yalnızca ibadet alanı olarak değil aynı zamanda bir sağlık merkezi o
 
             <div class="col-lg-4 col-md-6">
                 <div class="card rehber-card shadow-sm h-100">
-                    <div class="row g-0 h-100">
+                    <div class="row g-0 h-100 flex-column-reverse flex-md-row">
                         <div class="col-md-6 p-4 d-flex flex-column justify-content-between">
                             <h5 class="border-bottom pb-2">Şifaiye Medresesi</h5>
                             <p class="text-muted small">Selçuklu döneminden kalan önemli bir şifahane yapısıdır.</p>
@@ -119,7 +122,7 @@ Medrese içerisinde hastaların tedavi edildiği odalar, eğitim verilen alanlar
 
             <div class="col-lg-4 col-md-6">
                 <div class="card rehber-card shadow-sm h-100">
-                    <div class="row g-0 h-100">
+                    <div class="row g-0 h-100 flex-column-reverse flex-md-row">
                         <div class="col-md-6 p-4 d-flex flex-column justify-content-between">
                             <h5 class="border-bottom pb-2">Kongre Müzesi</h5>
                             <p class="text-muted small">Sivas Kongresi’nin yapıldığı tarihi bir binadır.</p>
@@ -143,7 +146,7 @@ Günümüzde müze olarak hizmet veren yapı içerisinde kongre dönemine ait be
 
             <div class="col-lg-4 col-md-6">
                 <div class="card rehber-card shadow-sm h-100">
-                    <div class="row g-0 h-100">
+                    <div class="row g-0 h-100 flex-column-reverse flex-md-row">
                         <div class="col-md-6 p-4 d-flex flex-column justify-content-between">
                             <h5 class="border-bottom pb-2">Arkeoloji Müzesi</h5>
                             <p class="text-muted small">Sivas’ın zengin tarihini yansıtan önemli bir müzedir.</p>
@@ -167,7 +170,7 @@ Ziyaretçiler müze içerisinde Anadolu’nun kültürel gelişimini kronolojik 
 
             <div class="col-lg-4 col-md-6">
                 <div class="card rehber-card shadow-sm h-100">
-                    <div class="row g-0 h-100">
+                    <div class="row g-0 h-100 flex-column-reverse flex-md-row">
                         <div class="col-md-6 p-4 d-flex flex-column justify-content-between">
                             <h5 class="border-bottom pb-2">Aşık Veysel Müzesi</h5>
                             <p class="text-muted small">Ünlü halk ozanı Aşık Veysel’i tanıtan bir müzedir.</p>
@@ -194,7 +197,12 @@ Türk halk kültürünün önemli temsilcilerinden biri olan Aşık Veysel’in 
 
     <footer class="mt-auto py-4 bg-dark text-white text-center">
         <div class="container">
-            <p class="mb-0 small">© 2026 Sivas Kaşifi - Tüm Hakları Saklıdır.</p>
+            <div class="d-flex justify-content-center gap-3 mb-3">
+                <a href="index.html" class="text-white text-decoration-none small opacity-75">Anasayfa</a>
+                <a href="rehber.html" class="text-white text-decoration-none small opacity-75">Rehber</a>
+                <a href="iletisim.html" class="text-white text-decoration-none small opacity-75">İletişim</a>
+            </div>
+            <p class="mb-1 small fw-bold">© 2026 Sivas Kaşifi - Tüm Hakları Saklıdır.</p>
         </div>
     </footer>
 
@@ -202,7 +210,7 @@ Türk halk kültürünün önemli temsilcilerinden biri olan Aşık Veysel’in 
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content border-0 shadow-lg overflow-hidden">
                 <div class="modal-body p-0">
-                    <div class="row g-0">
+                    <div class="row g-0 flex-column-reverse flex-lg-row">
                         
                         <div class="col-lg-7 p-4 p-md-5 d-flex flex-column" style="min-height: 450px;">
                             <div class="d-flex justify-content-between align-items-start mb-4">
@@ -211,14 +219,14 @@ Türk halk kültürünün önemli temsilcilerinden biri olan Aşık Veysel’in 
                             </div>
                             
                             <div class="modal-text-content overflow-auto pe-3" style="max-height: 350px;">
-                                <!-- Javascript tarafında innerHTML kullanarak /n metinlerini ayırmak için style ekledik -->
+                                
                                 <p class="lead text-secondary" id="modalDescription" style="line-height: 1.8; white-space: pre-wrap;">Detaylı Açıklama...</p>
                             </div>
                         </div>
                         
-                        <div class="col-lg-5 d-none d-lg-block">
+                        <div class="col-lg-5">
                             <div class="h-100">
-                                <img src="" id="modalImage" class="img-fluid h-100 w-100" style="object-fit: cover; min-height: 100%;" alt="Place Image">
+                                <img src="" id="modalImage" class="img-fluid w-100" style="object-fit: cover; height: 100%; min-height: 300px;" alt="Place Image">
                             </div>
                         </div>
 
@@ -230,6 +238,7 @@ Türk halk kültürünün önemli temsilcilerinden biri olan Aşık Veysel’in 
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
     
     <script>
     document.addEventListener('DOMContentLoaded', function () {
